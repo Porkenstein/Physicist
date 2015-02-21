@@ -350,7 +350,7 @@
 
         protected void PlaySound(string name, bool localized, bool looping, float volume, float pitch, float pan)
         {
-            if (name != string.Empty)
+            if (String.IsNullOrEmpty(name))
             {
                 // check for every Guid in the sound controller.
                 for (int i = this.PlayingSounds.Count - 1; i >= 0; i--)
