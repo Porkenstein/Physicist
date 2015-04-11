@@ -92,6 +92,7 @@
                 {
                     this.layerBody.CollisionLayer = value;
                 }
+
                 this.bodies.ForEach(body => body.Body.CollisionLayer = value);
                 this.players.ForEach(player => player.Body.CollisionLayer = value);
             }

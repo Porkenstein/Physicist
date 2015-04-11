@@ -201,7 +201,7 @@
                         var layers = rootElement.Elements("MapLayer");
                         if (layers.Count() > 0)
                         {
-                            for(int i = 0; i < layers.Count(); i++)
+                            for (int i = 0; i < layers.Count(); i++)
                             {
                                 var layerEle = layers.ElementAt(i);
                                 int xoff = int.Parse(layerEle.Attribute("xoffset").Value, CultureInfo.CurrentCulture);

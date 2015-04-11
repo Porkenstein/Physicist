@@ -72,7 +72,8 @@
         protected override void Initialize()
         {
             FarseerPhysics.Settings.UseFPECollisionCategories = true;
-            //FarseerPhysics.Settings.DefaultFixtureCollisionCategories = PhysicistCategory.All;
+
+            // FarseerPhysics.Settings.DefaultFixtureCollisionCategories = PhysicistCategory.All;
             MainGame.SetWindowBounds(new Rectangle(400, 10, 800, 480));
             ContentController.Instance.Initialize(this.Content, "Content");
             MainGame.GraphicsDev = this.GraphicsDevice;
